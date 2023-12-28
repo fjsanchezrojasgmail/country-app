@@ -9,8 +9,10 @@
     <!--Search Box-->
     Busquedas
 
+
+    <!-- (onValue)="searchByCapital($event)" -->
     <shared-search-box
-    (onValue)="searchByCountry($event)"
+     (onDebounce)="searchByCountry($event)"
       placeholder = 'Busqueda por pais'></shared-search-box>
 
 
@@ -26,6 +28,10 @@
   <div class="col">
 
     <hr>
+
+    <shared-loading-spinner *ngIf="isLoading"></shared-loading-spinner>
+
+
 
     <countries-table [countries]="countries"></countries-table>
 

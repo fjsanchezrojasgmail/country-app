@@ -1,0 +1,37 @@
+<hr>
+<p-sidebar [(visible)]="visibleSidebar1" [baseZIndex]="10000">
+  <h3>Left Sidebar</h3>
+  <p-button type="button" styleClass="p-button-success"  label="Save" (click)="visibleSidebar1 = false"></p-button>
+  <p-button type="button" styleClass="p-button-secondary" label="Cancel" (click)="visibleSidebar1 = false"></p-button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar2" position="right" [baseZIndex]="10000">
+  <h3>Right Sidebar</h3>
+  <p-button type="button" styleClass="p-button-success"  label="Save" (click)="visibleSidebar2 = false"></p-button>
+  <p-button type="button" styleClass="p-button-secondary" label="Cancel" (click)="visibleSidebar2 = false"></p-button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar3" position="top" [baseZIndex]="10000">
+  <h3>Top Sidebar</h3>
+  <p-button type="button" styleClass="p-button-success"  label="Save" (click)="visibleSidebar3 = false"></p-button>
+  <p-button type="button" styleClass="p-button-secondary" label="Cancel" (click)="visibleSidebar3 = false"></p-button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar4" position="bottom" [baseZIndex]="10000">
+  <h3>Bottom Sidebar</h3>
+  <p-button type="button" styleClass="p-button-success"  label="Save" (click)="visibleSidebar4 = false"></p-button>
+  <p-button type="button" styleClass="p-button-secondary" label="Cancel" (click)="visibleSidebar4 = false"></p-button>
+</p-sidebar>
+
+<p-sidebar [(visible)]="visibleSidebar5" [fullScreen]="true" [baseZIndex]="10000">
+  <h3>Full Screen Sidebar</h3>
+  <p-button type="button" styleClass="p-button-success"  label="Save" (click)="visibleSidebar5 = false"></p-button>
+  <p-button type="button" styleClass="p-button-secondary" label="Cancel" (click)="visibleSidebar5 = false"></p-button>
+</p-sidebar>
+
+<p-button type="button" class="mr-2" (click)="visibleSidebar1 = true" icon="pi pi-arrow-right"></p-button>
+<p-button type="button" class="mr-2" (click)="visibleSidebar2 = true" icon="pi pi-arrow-left"></p-button>
+<p-button type="button" class="mr-2" (click)="visibleSidebar3 = true" icon="pi pi-arrow-down"></p-button>
+<p-button type="button" class="mr-2" (click)="visibleSidebar4 = true" icon="pi pi-arrow-up"></p-button>
+<p-button type="button" class="mr-2" (click)="visibleSidebar5 = true" icon="pi pi-th-large"></p-button>
+
